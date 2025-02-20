@@ -1,0 +1,8 @@
+[user]
+	mail = primoretc@gmail.com
+	name = primoretc
+	email = primoretc@gmail.com
+[credential]
+	helper = cache
+[alias]
+	history = log --graph

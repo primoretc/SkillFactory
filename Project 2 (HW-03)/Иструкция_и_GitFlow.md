@@ -1,49 +1,52 @@
-## Инструкция для нового сотрудника
+# Инструкция для нового сотрудника
 
 ### Настроика git в рабочем окружении.
 1. Укажем имя и электронную почту пользователя
+
 ```
-\```
 git config --global user.name "ваше имя"
+
 git config --global user.email "ваш email"
-\```
+
 ```
+
 2. -   Установим алиас  `history` для команды  `log --graph`. То есть при вызове команды  `git history`  будет выполняться команда `git log --graph`  .
+
 ```
-\```
 git config --global alias.history 'log --graph'
-\```
+
 ```
+
 3. ### **Автоматизация аутентификации GitHub**
 
 Для упрощения операций  `git push/pull`  без ввода учетных данных:
 
 -   Добавьте в  `.gitconfig`  хелпер для использования переменных окружения  `GIT_USERNAME`  и  `GIT_ACCESS_TOKEN`  
-   ```
-\``` 
+
+``` 
     [credential]
       helper = "!f() { echo \"username=${GIT_USERNAME}\"; echo \"password=${GIT_ACCESS_TOKEN}\"; }; f"
-
-\```    
+    
 ```
 
 -   Установите переменные в  `.bashrc`/`.zshrc`:
-   ```
-\```     
+
+```     
     export GIT_USERNAME="ваш_логин"
     export GIT_ACCESS_TOKEN="ваш_токен"
-\```    
-```  
+
+```    
+  
 
 
 Весь код проекта нашей компании находится в репозитории на GitHub. 
 Ознакомиться с ним можно пройдя по [по ссылке](https://github.com/primoretc/SkillFactory)
 
 Для начала работы нужно склонировать репозиторий в свою локальную папку с помощью команды 
+
 ```
-\```
-https://github.com/primoretc/SkillFactory.git
-\```
+git clone https://github.com/primoretc/SkillFactory.git
+
 ```
 
 

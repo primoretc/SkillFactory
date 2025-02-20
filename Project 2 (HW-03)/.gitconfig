@@ -3,6 +3,7 @@
 	name = primoretc
 	email = primoretc@gmail.com
 [credential]
-	helper = cache
+  helper = "!f() { echo \"username=${GIT_USERNAME}\"; echo \"password=${GIT_ACCESS_TOKEN}\"; }; f"
+
 [alias]
 	history = log --graph

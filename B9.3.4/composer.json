@@ -1,0 +1,5 @@
+{
+    "require": {
+        "mailjet/mailjet-swiftmailer": "^2.0"
+    }
+}
